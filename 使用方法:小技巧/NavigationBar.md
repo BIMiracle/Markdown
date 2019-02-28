@@ -1,0 +1,1 @@
+[self.navigationController.navigationBar setHidden:YES];

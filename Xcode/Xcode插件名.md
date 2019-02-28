@@ -1,0 +1,13 @@
+1. CocoaPods---CocoaPods插件
+2. FKConsole---控制台打印中文
+3. IpaExporter---导出ipa,未成功
+4. KSImageNamed---图片选择
+5. VVDocumenter---注释
+6. ClangFormat---格式化代码
+7. HOStringSense---可以在弹出框写NSString
+8. SCXcodeSwitchExpander---switch枚举的时候会自动生成代码
+9. XToDo---快捷键标记，将要做的事
+10. BBUDebuggerTuckAway---自动隐藏控制台
+11. DerivedData-Exterminator---清除Xcode缓存目录
+12. InjectionPlugin---动态调试APP,F5刷新
+13. Peckham---搜索自动添加头文件(暂时不能用)
