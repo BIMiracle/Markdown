@@ -123,4 +123,5 @@ yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.
 
 [iPhone 需要通过 PP 助手安装 Shadowrocket](https://pro.25pp.com/pp_mac_ios)
 
-转载并编辑原文链接:[https://www.vultrcn.com](https://www.vultrcn.com)
+参考链接:[https://www.vultrcn.com](https://www.vultrcn.com)
+平时我们创建的都是云服务器，所以我们需要选择 Vultr Cloud Computer (VC2) 这一项。
