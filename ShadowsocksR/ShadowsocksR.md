@@ -7,24 +7,24 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 5. [安装锐速提升速度](https://www.vultrcn.com/7.html)
 6. 最后下载Shadowrocket软件即可
 
-#Vultr注册安装使用
-##一、注册账户
+# Vultr注册安装使用
+## 一、注册账户
 先点击官网[注册链接](https://www.vultr.com/?ref=7610494)，来到下图所示界面。按照图中提示![](./pictures/QQ20190228-141558@2x.png)我们首先在第一个框中填写注册邮箱，然后在第二个框中填写注册密码（长度最少十位，需要至少包含小写字母、大写字母、数字和特殊字符中的三项），最后点击 Create Account 继续即可。
 
 	注意：务必多检查几次注册邮箱，确保填写正确，否则后面会很麻烦！！！
 
-##二、验证邮箱
+## 二、验证邮箱
 点击 Create Account 后，注册邮箱内会收到一封名为“Welcome to Vultr.com”的验证邮件。打开邮件，按照下图提示，我们点击 Verify Your E-mail 前往验证即可。
 ![](./pictures/register02-2.png)
 
 	没有收到邮件的请检查垃圾箱及拦截记录，或者更换其他邮箱重新注册。注册邮箱必须验证！！！
 
-##三、充值余额
+## 三、充值余额
 点击 Verify Your E-mail 后，会来到下图所示界面。因为新注册账户的余额为 0 美元，无法创建服务器，所以我们需要先充值一定金额，然后再去创建服务器。按照下图提示，我们首先点击 Alipay，然后选择 $10，然后勾选 I Agree ...，最后点击 Pay with Alipay 前往付款即可。
 
 新用户首次充值可能需要 24 小时的账户验证期，耐心等待即可。
 
-##四、创建服务器
+## 四、创建服务器
 充值到账后，我们点击官网[右侧的圆形加号按钮](https://my.vultr.com/deploy/)即可进入创建服务器界面。
 
 平时我们创建的都是云服务器，所以我们需要选择 Vultr Cloud Computer (VC2) 这一项。
@@ -41,7 +41,7 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 
 左下角红框内三行信息是我们使用 Xshell(Mac使用FinalShell) 这一类管理软件连接服务器时需要用到的 SSH 连接信息。其中 Location 指机房位置，IP Address 指服务器 IP 地址（后面的按钮为复制IP地址），Username 指登录用户名，Password 指登录密码(后面第一个按钮为显示/隐藏，第二个按钮为复制密码)。
 
-##五、检测服务器
+## 五、检测服务器
 创建完成后不慌,我们先测试下这个服务器是否能用,先测试IP Address是否能连接[https://tools.ipip.net/ping.php](https://tools.ipip.net/ping.php)
 
 如果中国的丢包率都是 100%,除去港澳台地区(如下图),先查看服务器的Status是否为绿色的Running,如果不是,请耐心等待服务器创建完毕,如果是,那么只有删除服务器并再创建一个新的服务器了,重复第四部 创建服务器 知道成功为止
@@ -56,14 +56,14 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 
 当Ping和端口都检测成功后变可以连接服务器进行配置了,
 
-##六、连接服务器
-###1、下载 FinalShell等连接服务器软件
+## 六、连接服务器
+### 1、下载 FinalShell等连接服务器软件
 
 下载地址：[http://www.hostbuf.com/t/988.html](http://www.hostbuf.com/t/988.html)
 
 官网: [http://www.hostbuf.com/](http://www.hostbuf.com/)
 
-###2、连接 Vultr 服务器
+### 2、连接 Vultr 服务器
 下载安装完成后打开软件,新建连接,然后粘贴SSH 连接信息 IP Address,Username和Password
 ![](./pictures/QQ20190228-141006@2x.png)
 点击确定后再打开连接管理器,选择新建的连接,双击或者右键连接
@@ -72,7 +72,7 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ![](./pictures/05.png)
 ![连接成功图](./pictures/QQ20190228-141813@2x.png)
 
-##六、搭建 ShadowsocksR 服务器端
+## 七、搭建 ShadowsocksR 服务器端
 使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令：
 ```
 wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocksR.sh && bash shadowsocksR.sh
@@ -88,7 +88,7 @@ wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com
 安装过程耗时 2~5 分钟，完成后会来到下图界面，**请把下图中红框内的信息保存下来，使用时需要用到配置信息。**
 ![](./pictures/114222mdf1jr1h6qru1ere.png.thumb.jpg)
 
-##七、安装 TCP 加速软件
+## 八、安装 TCP 加速软件
 前面虽然已经搭建好了 SSR，但是因为服务器位于国外，连接速度会较慢，所以我们非常必要在服务器上安装 TCP 加速软件来提速。一般大家常用的 TCP 加速软件有锐速和 Google BBR 拥塞控制算法。
 
 复制一下代码粘贴到 FinalShell
@@ -124,4 +124,5 @@ yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.
 [iPhone 需要通过 PP 助手安装 Shadowrocket](https://pro.25pp.com/pp_mac_ios)
 
 参考链接:[https://www.vultrcn.com](https://www.vultrcn.com)
+
 平时我们创建的都是云服务器，所以我们需要选择 Vultr Cloud Computer (VC2) 这一项。
