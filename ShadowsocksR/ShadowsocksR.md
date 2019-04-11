@@ -119,10 +119,10 @@ yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.
 ![](./pictures/BF392A122DAEB69EFE19AEB74A168A4E.jpg)
 找到最新的版本(一般默认第一个)点击.zip下载
 
-[Android 客户端](https://curls.fun/Shadowsocks/ShadowsocksR-Android-3.4.0.8.apk)
+[Android 客户端](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)
 ![](./pictures/10D94DA3A19C55684DAA8D2612C609A5.jpg)
 
-[Mac 客户端](https://curls.fun/Shadowsocks/Shadowsocks-MacOS-2.6.3.zip)
+[Mac 客户端](https://github.com/shadowsocks/ShadowsocksX-NG/releases)
 ![](./pictures/082C301D0EF0B180F596B90FF3BBB01A.jpg)
 
 [iPhone 只有美服才有Shadowsocks软件,需要登录一个美服账号(可以淘宝自行购买)](https://itunes.apple.com/us/app/shadowrocket/id932747118)
