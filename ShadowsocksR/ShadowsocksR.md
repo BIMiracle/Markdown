@@ -119,7 +119,7 @@ yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.
 ![](./pictures/BF392A122DAEB69EFE19AEB74A168A4E.jpg)
 找到最新的版本(一般默认第一个)点击.zip下载
 
-[Android 客户端](https://github.com/shadowsocksr-backup/shadowsocksr-android/releases)
+[Android 客户端](https://github.com/shadowsocks/shadowsocks-android/releases)
 ![](./pictures/10D94DA3A19C55684DAA8D2612C609A5.jpg)
 
 [Mac 客户端](https://github.com/shadowsocks/ShadowsocksX-NG/releases)
