@@ -130,3 +130,36 @@ yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.
 参考链接:[https://www.vultrcn.com](https://www.vultrcn.com)
 
 平时我们创建的都是云服务器，所以我们需要选择 Vultr Cloud Computer (VC2) 这一项。
+
+
+
+## 服务器操作
+
+一键脚本-自动加入开机自启动。
+
+wget http://vpn.ximcx.cn/SSR/SSR bash SSR
+
+
+卸载方法： 
+
+使用 root 用户登录，运行以下命令：
+
+wget http://vpn.ximcx.cn/SSR/SSR bash SSR uninstall
+
+
+
+使用命令： 
+
+启动：/etc/init.d/shadowsocks start 
+
+停止：/etc/init.d/shadowsocks stop 
+
+重启：/etc/init.d/shadowsocks restart 
+
+状态：/etc/init.d/shadowsocks status
+
+配置文件路径：/etc/shadowsocks.json 
+
+日志文件路径：/var/log/shadowsocks.log 
+
+安装路径：/usr/local/shadowsocks/shadowsoks
