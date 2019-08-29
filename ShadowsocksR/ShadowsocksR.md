@@ -75,7 +75,7 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ## 七、搭建 ShadowsocksR 服务器端
 使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令：
 ```
-wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocksR.sh && bash shadowsocksR.sh
+wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/shadowsocks-libev_CN.sh && bash shadowsocks-libev_CN.sh
 ```
 回到 FinalShell 软件，鼠标右击选择粘贴，回车继续。
 ![](./pictures/115634z9zcrf9qggtnuzqq.png.thumb.jpg)
@@ -93,7 +93,7 @@ wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com
 
 复制一下代码粘贴到 FinalShell
 ```
-wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/rskernel.sh && bash rskernel.sh
+wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/rskernel.sh && bash rskernel.sh
 ```
 ![](./pictures/centos7-serverspeeder01-2.png)
 回车后系统会自动下载脚本并执行更换内核命令。按照下图提示，我们可以看到当前系统确实为 CentOS7，等待内核更换完毕后系统会自动重启并断开连接。
@@ -101,7 +101,7 @@ wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/uxh
 
 **系统重启后，FinalShell 软件会断开连接**。等待 3~5 分钟服务器即可重启完毕，我们重新连接服务器，按照下图提示，我们继续复制命令：
 ```
-yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/0oVicero0/serverSpeeder_Install/master/appex.sh && bash appex.sh install
+yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/appex.sh && bash appex.sh install
 ```
 ![](./pictures/centos7-serverspeeder03-2.png)
 回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。
