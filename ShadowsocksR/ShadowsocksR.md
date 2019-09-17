@@ -75,7 +75,7 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ## 七、搭建 ShadowsocksR 服务器端
 使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令：
 ```
-wget --no-check-certificate -O shadowsocksR.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/shadowsocks-libev_CN.sh && bash shadowsocks-libev_CN.sh
+wget --no-check-certificate -O shadowsocks-libev_CN.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/shadowsocks-libev_CN.sh && bash shadowsocks-libev_CN.sh
 ```
 回到 FinalShell 软件，鼠标右击选择粘贴，回车继续。
 ![](./pictures/115634z9zcrf9qggtnuzqq.png.thumb.jpg)
