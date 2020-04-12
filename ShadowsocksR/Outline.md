@@ -1,5 +1,10 @@
 # Outline Server
 ## 一、install and run Shadowbox
+
+先重启Docker
+
+```sudo service docker restart```
+
 ```
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 ```
@@ -26,14 +31,21 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/tryEvething/outline-
 	- Access key port 1175, for TCP and UDP
 
 按照提示终端输入
+
 ```
-firewall-cmd --zone=public --add-port=18728/tcp --permanent
-firewall-cmd --zone=public --add-port=1175/tcp --permanent
-firewall-cmd --zone=public --add-port=1175/udp --permanent
+firewall-cmd --zone=public --add-port=37720/tcp --permanent
+firewall-cmd --zone=public --add-port=14896/tcp --permanent
+firewall-cmd --zone=public --add-port=14896/udp --permanent
 firewall-cmd --reload
 ```
 
 [官方提示配置(未成功)](https://github.com/Jigsaw-Code/outline-server/issues/97)
+
+添加防火墙端口后查看是否已开放:
+
+```
+firewall-cmd --list-ports
+```
 
 ## 三、连接服务器
 [下载服务端软件](https://github.com/Jigsaw-Code/outline-releases/tree/master/manager)

@@ -4,6 +4,9 @@
 ##工程缓存
 ~/Library/Developer/Xcode/DerivedData
 
+##模拟器版本存储地址
+/Library/Developer/CoreSimulator/Profiles/Runtimes/
+
 ##PCH设置
 $(SRCROOT)/项目名/PrefixHeader.pch
 

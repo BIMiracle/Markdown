@@ -31,6 +31,8 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ![](./pictures/QQ20190228-143603@2x.png)
 ![](./pictures/QQ20190228-143852@2x.png)
 ![](./pictures/QQ20190228-143933@2x.png)
+**最新版本请选择CentOS 7  的服务器,默认为8**
+
 如上图,一般只需要选择地区,然后选择最实惠的服务器即可,有些有3.5$也可以选择.**不推荐使用最便宜的 $2.5/mo 套餐，默认只有 IPv6 地址，没有 IPv4 地址！！！**
 
 点击 Deploy Now 后，会来到下图所示界面。按照下图提示，红色 Installing 表示服务器初始化中。![](./pictures/register09-2.png)
