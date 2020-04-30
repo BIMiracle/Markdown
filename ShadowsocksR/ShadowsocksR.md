@@ -75,45 +75,18 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ![连接成功图](./pictures/QQ20190228-141813@2x.png)
 
 ## 七、搭建 ShadowsocksR 服务器端
-使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令：
+使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令到 FinalShell 执行：
 ```
-wget --no-check-certificate -O shadowsocks-libev_CN.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/shadowsocks-libev_CN.sh && bash shadowsocks-libev_CN.sh
+bash <(curl -sL https://raw.githubusercontent.com/hijkpw/scripts/master/centos_install_ssr.sh)
 ```
-回到 FinalShell 软件，鼠标右击选择粘贴，回车继续。
-![](./pictures/115634z9zcrf9qggtnuzqq.png.thumb.jpg)
-回车后系统会自行下载脚本并运行。按照下图提示，我们依次输入 SSR 的各项连接信息，最后回车继续。
 
-如果报错 Network is unreachable那么说明你选的服务器是2.5 美元的类型,请删除并换成3.5$或者5$的服务器
+按回车键，屏幕出现“请设置SSR的密码（不输入则随机生成）” 的提示，按照提示设置密码（SSR的密码。例如1234abcd，不是买服务器后台的密码）、端口（SSR的端口，例如12345，不能是22和80）并选择加密方式。
 
-![](./pictures/114210ke6fcret00fr09rr.png.thumb.jpg)
+接下来屏幕上开始疯狂出现一堆你看得懂也可能看不懂的东西，如果安装过程中卡住，请耐心等待几分钟；期间网络断开（windows上表现为黑框框中或者顶部标题出现disconnected字样，mac表现为终端出现“closed by remote host”或”broken pipe”），请重新连接后再次执行命令。脚本执行成功后会输出SSR配置，界面如下：
 
-安装过程耗时 2~5 分钟，完成后会来到下图界面，**请把下图中红框内的信息保存下来，使用时需要用到配置信息。**
-![](./pictures/114222mdf1jr1h6qru1ere.png.thumb.jpg)
+![](./pictures/QQ20200430-175035.png)
 
-## 八、安装 TCP 加速软件
-前面虽然已经搭建好了 SSR，但是因为服务器位于国外，连接速度会较慢，所以我们非常必要在服务器上安装 TCP 加速软件来提速。一般大家常用的 TCP 加速软件有锐速和 Google BBR 拥塞控制算法。
 
-复制一下代码粘贴到 FinalShell
-```
-wget --no-check-certificate -O rskernel.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/rskernel.sh && bash rskernel.sh
-```
-![](./pictures/centos7-serverspeeder01-2.png)
-回车后系统会自动下载脚本并执行更换内核命令。按照下图提示，我们可以看到当前系统确实为 CentOS7，等待内核更换完毕后系统会自动重启并断开连接。
-![](./pictures/centos7-serverspeeder02-2.png)
-
-**系统重启后，FinalShell 软件会断开连接**。等待 3~5 分钟服务器即可重启完毕，我们重新连接服务器，按照下图提示，我们继续复制命令：
-```
-yum install net-tools -y && wget --no-check-certificate -O appex.sh https://raw.githubusercontent.com/tryEvething/shadowsocks_bash/master/appex.sh && bash appex.sh install
-```
-![](./pictures/centos7-serverspeeder03-2.png)
-回车后系统会自动下载脚本并执行。按照下图提示，我们直接回车继续即可。
-![](./pictures/centos6-serverspeeder02-2.png)
-
-回车继续后系统会自动安装锐速，同时会先后要求我们设置锐速的三项信息。按照下图提示，我们每次都直接回车继续即可。
-![](./pictures/centos7-serverspeeder05.png)
-
-设置完三项信息完成后，系统会完成锐速安装并输出锐速的运行状态。按照下图提示，当出现红框内信息时说明锐速已完成安装并开机自启动。
-![](./pictures/centos6-serverspeeder04-2.png)
 
 至此,安装已结束,关闭FinalShell,安装好下面对应的平台软件,然后填上之前保存好的配置信息,打开[Google](https://www.google.com/),看看外面的世界吧!
 
