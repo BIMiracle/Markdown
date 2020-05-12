@@ -1,10 +1,6 @@
 # Outline Server
 ## 一、install and run Shadowbox
 
-先重启Docker
-
-```sudo service docker restart```
-
 ```
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 ```
@@ -14,10 +10,32 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-
 ```
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/tryEvething/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
 ```
+
+
+安装docker报错
+
+```
+> Verifying that Docker is installed .......... NOT INSTALLED
+> Would you like to install Docker? This will run 'curl -sS https://get.docker.com/ | sh'. [Y/n] y
+> Installing Docker ........................... Docker installation failed, please visit https://docs.docker.com/install for instructions.
+
+Sorry! Something went wrong. If you can't figure this out, please copy and paste all this output into the Outline Manager screen, and send it to us, to see if we can help you.
+```
+[https://www.runoob.com/docker/centos-docker-install.html](https://www.runoob.com/docker/centos-docker-install.html)
+
+安装Docker出现package docker-ce-3:19.03.8-3.el7.x86_64 requires containerd.io >= 1.2.2-3
+
+	yum install https://download.docker.com/linux/fedora/30/x86_64/stable/Packages/containerd.io-1.2.6-3.3.fc30.x86_64.rpm
+
 	
 如果出现docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
 
 解决方法:[https://github.com/Jigsaw-Code/outline-server/issues/39](https://github.com/Jigsaw-Code/outline-server/issues/39)
+
+重启Docker
+```sudo service docker restart```
+
+
 
 ## 二、防火墙过滤
 成功后会返回
