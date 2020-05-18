@@ -77,10 +77,14 @@ mac使用[FinalShell](http://www.hostbuf.com/t/1059.html)
 ## 七、搭建 ShadowsocksR 服务器端
 使用 FinalShell 软件成功连接服务器后，按照下图提示，我们复制命令到 FinalShell 执行：
 ```
-bash <(curl -sL https://raw.githubusercontent.com/hijkpw/scripts/master/centos_install_ssr.sh)
+bash <(curl -sL https://raw.githubusercontent.com/tryEvething/Markdown/master/ShadowsocksR/centos.sh)
 ```
 
-按回车键，屏幕出现“请设置SSR的密码（不输入则随机生成）” 的提示，按照提示设置密码（SSR的密码。例如1234abcd，不是买服务器后台的密码）、端口（SSR的端口，例如12345，不能是22和80）并选择加密方式。
+按回车键，屏幕出现“请设置SSR的密码（不输入则随机生成）” 的提示，按照提示设置密码（SSR的密码。例如1234abcd，不是买服务器后台的密码）
+
+接着输入端口（SSR的端口，例如12345，不能是22和80）
+
+剩下的 选择SSR的加密方式 选择SSR的协议 选择SSR混淆模式 都**直接回车**采用默认就行
 
 接下来屏幕上开始疯狂出现一堆你看得懂也可能看不懂的东西，如果安装过程中卡住，请耐心等待几分钟；期间网络断开（windows上表现为黑框框中或者顶部标题出现disconnected字样，mac表现为终端出现“closed by remote host”或”broken pipe”），请重新连接后再次执行命令。脚本执行成功后会输出SSR配置，界面如下：
 
