@@ -6,7 +6,7 @@ green="\033[0;32m"
 plain='\033[0m'
 
 FILENAME="ShadowsocksR-v3.2.2"
-URL="https://github.com/tryEvething/Markdown/tree/master/ShadowsocksR/ShadowsocksR.tar.gz"
+URL="https://raw.githubusercontent.com/tryEvething/Markdown/master/ShadowsocksR/ShadowsocksR.tar.gz"
 BASE=`pwd`
 
 function checkSystem()
