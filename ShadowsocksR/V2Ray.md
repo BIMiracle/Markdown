@@ -1,3 +1,6 @@
+#配置一
+
+
 ##v2ray带伪装脚本
 
 bash <(curl -sL https://raw.githubusercontent.com/tryEvething/Markdown/master/ShadowsocksR/v2ray.sh)
@@ -16,35 +19,40 @@ bash <(curl -sL https://raw.githubusercontent.com/tryEvething/Markdown/master/Sh
 /nGUZrXvb09KoyXV
 
 
+#配置二
+
+推荐系统 Debian 8.7
+
+首先下载脚本
+
+	wget https://install.direct/go.sh
+
+备用地址:
+
+	wget https://raw.githubusercontent.com/tryEvething/Markdown/master/ShadowsocksR/v2rayCore.sh
+
+执行脚本安装 V2Ray
+
+	sudo bash go.sh
+
+启动 V2Ray
+	
+	sudo systemctl start v2ray
+
+更多用法
+	bash go.sh -h
+
+升级更新
+
+	sudo bash go.sh
 
 
-##v2ray
-bash <(curl -L -s https://install.direct/go.sh)
 
-"port": 35383
+#other
 
-"id": "2f958737-789f-42dc-ab61-204b1dc241bd"
-
-"alterId": 64
+Mac程序:
+[https://github.com/yanue/V2rayU/wiki/V2rayU%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E](https://github.com/yanue/V2rayU/wiki/V2rayU%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E)
 
 
-```
-# firewalld放行端口（适用于CentOS7/8）
-firewall-cmd --permanent --add-port=35383/tcp
-# 35383改成你配置文件中的端口号
-firewall-cmd --reload
-
-# ufw放行端口（适用于ubuntu）
-ufw allow 35383/tcp
-# 35383改成你的端口号
-
-# iptables 放行端口（适用于CentOS 6/7）
-iptables -I INPUT -p tcp --dport 35383 -j ACCEPT
-```
-
-```
-# 设置开机启动
-systemctl enable v2ray
-# 运行v2ray
-systemctl start v2ray
-```
+[Caddy+h2脚本:](https://github.com/dylanbai8/V2Ray_h2-tls_Website_onekey)
+```wget -N --no-check-certificate git.io/h.sh && chmod +x h.sh && bash h.sh```

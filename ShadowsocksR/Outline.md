@@ -28,13 +28,18 @@ Sorry! Something went wrong. If you can't figure this out, please copy and paste
 	yum install https://download.docker.com/linux/fedora/30/x86_64/stable/Packages/containerd.io-1.2.6-3.3.fc30.x86_64.rpm
 
 	
-如果出现docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+出现docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
 
 解决方法:[https://github.com/Jigsaw-Code/outline-server/issues/39](https://github.com/Jigsaw-Code/outline-server/issues/39)
 
-重启Docker
-```sudo service docker restart```
+<!--重启Docker
+```sudo service docker restart```-->
 
+启动docker
+```service docker start```
+
+设置docker开机自启动
+```systemctl enable docker```
 
 
 ## 二、防火墙过滤
@@ -55,6 +60,18 @@ firewall-cmd --zone=public --add-port=37720/tcp --permanent
 firewall-cmd --zone=public --add-port=14896/tcp --permanent
 firewall-cmd --zone=public --add-port=14896/udp --permanent
 firewall-cmd --reload
+```
+
+可能需要先开启防火墙
+
+```
+systemctl start firewalld
+```
+
+记得把当前ssh连接端口开启
+
+```
+firewall-cmd --zone=public --add-port=22/udp --permanent
 ```
 
 [官方提示配置(未成功)](https://github.com/Jigsaw-Code/outline-server/issues/97)
